@@ -64,7 +64,7 @@ class EditFragment : Fragment() {
             Vm.update(dataInsert)
 
             activity?.runOnUiThread {
-                Toast.makeText(context, "Berhasil menambahkan note", Toast.LENGTH_LONG)
+                Toast.makeText(context, "Berhasil mengedit data", Toast.LENGTH_LONG).show()
             }
         }
         Navigation.findNavController(binding.root)

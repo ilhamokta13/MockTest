@@ -46,7 +46,7 @@ class TambahFragment : Fragment() {
                 Vm.insert(dataInsert)
 
                 activity?.runOnUiThread {
-                    Toast.makeText(context,"Berhasil menambahkan note", Toast.LENGTH_LONG)
+                    Toast.makeText(context,"Berhasil menambahkan data", Toast.LENGTH_LONG).show()
                 }
             }
             Navigation.findNavController(binding.root).navigate(R.id.action_tambahFragment_to_homeFragment)

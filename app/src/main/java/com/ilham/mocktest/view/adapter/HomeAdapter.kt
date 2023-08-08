@@ -5,6 +5,7 @@ import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.ilham.mocktest.R
@@ -40,6 +41,7 @@ class HomeAdapter(var context: Context, var toko: List<DataToko>) : RecyclerView
                 Note?.tokoDao()?.deleteToko(toko[position])
                 kotlin.run {
                     Navigation.findNavController(it).navigate(R.id.homeFragment)
+                    Toast.makeText(context,"Berhasil Menghapus Data", Toast.LENGTH_LONG).show()
                 }
 
 
